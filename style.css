@@ -6,17 +6,21 @@
 html,
 body {
   background-color: black;
+  color: white;
 }
 /* HEADER BÖLÜMÜ */
 
 .first-head {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   text-align: center;
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1000;
+  background-color: black;
 }
 .first-head div {
   margin: 20px 60px;
@@ -44,6 +48,108 @@ body {
   font-style: normal;
   cursor: pointer;
 }
-li:hover{
-    color: rgb(216, 4, 4);
+li:hover {
+  color: rgb(216, 4, 4);
+}
+/* HELLO KISMI */
+.hello {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.nurdogan {
+  float: left;
+  width: 65%;
+}
+.batman {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.batman img {
+  width: 20vw;
+  height: auto;
+  max-height: 20vh;
+  max-width: 20vh;
+  min-height: 10vh;
+  min-width: 10vh;
+  min-height: 5vh;
+  border-radius: 20px;
+  border-style: none;
+  animation: upDown 1.5s ease-in-out infinite alternate;
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px); /* Y ekseninde 20px hareket */
+  }
+}
+.hello h1 {
+  font-size: 48px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(216, 4, 4);
+}
+.hello h2 {
+  font-size: 32px;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.paragraph {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+}
+.icons {
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icons a {
+  margin-left: 30px;
+}
+.icons i {
+  font-size: 50px;
+  color: rgb(216, 19, 4);
+  border-radius: 50%;
+}
+i:hover {
+  filter: invert(1);
+  color: rgb(53, 63, 78);
+  box-shadow: rgb(216, 19, 4) 0px 0px 100px 10px;
+}
+.cv {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cv a {
+  background-color: rgb(216, 19, 4);
+  border: 1px solid rgb(71, 58, 33);
+  border-radius: 20px;
+  padding: 15px 30px;
+  color: black;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 10px;
+  box-shadow: rgb(216, 19, 4) 0px 2px 20px 3px, rgb(216, 19, 4) 0px 2px 16px 0px;
+  text-decoration: none;
 }
